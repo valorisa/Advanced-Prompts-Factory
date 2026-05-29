@@ -251,6 +251,25 @@ Conventional Commits, PR process, review process, Code of Conduct reference]
 
 ---
 
+## Real-World Test Results
+
+**Test Case: Python CLI for GitHub Repository Statistics**
+
+*Input*: "Python CLI tool for analyzing GitHub repository statistics (stars, forks, contributors, activity trends). Uses GitHub API v3, outputs JSON/CSV reports, includes pytest tests and pre-commit hooks."
+
+*Output*: 24 files generated in 90 seconds
+- ✅ Zero placeholders verified
+- ✅ Executable code (185 lines CLI + 212 lines tests)
+- ✅ CI/CD with setup-python@v5
+- ✅ .gitignore with `__pycache__/`, `.venv/`, `*.egg-info`
+- ✅ Makefile with `venv`, `lint`, `test` targets
+- ✅ README 613 lines bilingual EN/FR
+- ✅ Mermaid architecture diagram adapted to project
+
+*Repository*: https://github.com/valorisa/github-repository-analyzer
+
+---
+
 ## What Changed from v1.0
 
 | Zone | Before | After |
@@ -263,6 +282,7 @@ Conventional Commits, PR process, review process, Code of Conduct reference]
 | Mermaid Diagram | Empty template | Adapted to project type |
 | Quality Checklist | Structural | Includes "zero unresolved placeholder" |
 | Author | `[Name]` | `valorisa` pre-filled |
+| Test Validation | Not tested | Validated with real Python CLI project |
 
 ---
 

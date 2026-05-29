@@ -4,11 +4,90 @@ Real-world examples of using Advanced Prompts Factory meta-prompts to generate c
 
 ## Table of Contents
 
+- [Example 0: Python CLI Tool (Validated Production Test)](#example-0-python-cli-tool-validated-production-test)
 - [Example 1: PowerShell CLI Tool](#example-1-powershell-cli-tool)
 - [Example 2: Python FastAPI Backend](#example-2-python-fastapi-backend)
 - [Example 3: Node.js TypeScript Library](#example-3-nodejs-typescript-library)
 - [Example 4: Bash Script Collection](#example-4-bash-script-collection)
 - [Example 5: Nix Configuration Repository](#example-5-nix-configuration-repository)
+
+---
+
+## Example 0: Python CLI Tool (Validated Production Test)
+
+**Real end-to-end test of RepoArchitect Pro v2.0 - Published on GitHub**
+
+### User Input
+
+```text
+Python CLI tool for analyzing GitHub repository statistics (stars, forks, contributors, activity trends).
+Uses GitHub API v3, outputs JSON/CSV reports, includes pytest tests and pre-commit hooks.
+```
+
+### Generation Results
+
+- **Time**: 90 seconds
+- **Files**: 24 generated
+- **Lines**: 3,530 total (185 CLI + 212 tests)
+- **Placeholders**: 0 verified
+- **Repository**: https://github.com/valorisa/github-repository-analyzer
+
+### Stack Detection (Phase 0 Silent Analysis)
+
+- Python 3.10+
+- pip package manager
+- ruff linter + mypy type checker
+- pytest + coverage
+- CI: setup-python@v5
+
+### Key Validation Points
+
+✅ **Zero Placeholders**: Grep confirmed no TODO/FIXME/[Description]  
+✅ **Executable Code**: CLI runs immediately after git clone  
+✅ **Real Tests**: 15 pytest tests with fixtures and mocks  
+✅ **Type Safety**: mypy strict mode passes  
+✅ **CI/CD**: GitHub Actions with matrix testing (3.10, 3.11, 3.12)
+
+### Generated File Structure
+
+```
+├── README.md (613 lines bilingual EN/FR)
+├── src/github_stats/
+│   ├── __init__.py
+│   └── cli.py (185 lines - fully functional API client)
+├── tests/test_cli.py (212 lines - 100% coverage ready)
+├── .github/workflows/
+│   ├── ci.yml (setup-python@v5, pytest, mypy, ruff)
+│   └── release.yml (PyPI publishing)
+├── pyproject.toml (full setuptools config)
+├── requirements.txt + requirements-dev.txt
+├── Makefile (venv, lint, test targets)
+├── .pre-commit-config.yaml (ruff, mypy, bandit)
+└── docs/ (architecture.md + usage.md with Mermaid diagrams)
+```
+
+### Code Quality Metrics
+
+| Metric | Result |
+|--------|--------|
+| Python syntax errors | 0 |
+| Placeholder count | 0 |
+| Test coverage ready | 100% |
+| Type checking | mypy strict ✅ |
+| Linting | ruff ✅ |
+| Security audit | bandit ✅ |
+
+### README Features Demonstrated
+
+- 20 GitHub topics for SEO
+- Mermaid architecture diagram
+- Complete bilingual EN/FR documentation
+- Real troubleshooting section (5 common errors with solutions)
+- Working code examples in all sections
+
+### Live Repository
+
+Visit [github.com/valorisa/github-repository-analyzer](https://github.com/valorisa/github-repository-analyzer) to see the complete generated project.
 
 ---
 
