@@ -20,7 +20,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
       - name: Install markdownlint-cli2
         run: npm install -g markdownlint-cli2
@@ -74,26 +73,26 @@ jobs:
             if [ -f "$file" ]; then
               echo "Checking $file..."
 
-              # Check for Version field
-              if ! grep -q "^**Version**:" "$file"; then
+              # Check for Version field (format: **Version**: X.Y.Z or Version: X.Y.Z)
+              if ! grep -qE "^\*\*Version\*\*:|^Version:" "$file"; then
                 echo "ERROR: $file missing Version field"
                 exit 1
               fi
 
               # Check for Stacks Supported field
-              if ! grep -q "^**Stacks Supported**:" "$file"; then
+              if ! grep -qE "^\*\*Stacks Supported\*\*:|^Stacks Supported:" "$file"; then
                 echo "ERROR: $file missing Stacks Supported field"
                 exit 1
               fi
 
               # Check for Project Types field
-              if ! grep -q "^**Project Types**:" "$file"; then
+              if ! grep -qE "^\*\*Project Types\*\*:|^Project Types:" "$file"; then
                 echo "ERROR: $file missing Project Types field"
                 exit 1
               fi
 
               # Check for Author field
-              if ! grep -q "^**Author**:" "$file"; then
+              if ! grep -qE "^\*\*Author\*\*:|^Author:" "$file"; then
                 echo "ERROR: $file missing Author field"
                 exit 1
               fi
