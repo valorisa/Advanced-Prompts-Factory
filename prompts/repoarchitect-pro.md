@@ -1,6 +1,6 @@
 # RepoArchitect Pro
 
-**Version**: 2.0.0  
+**Version**: 2.1.0  
 **Stacks Supported**: PowerShell, Node.js, Python, Nix/NixOS, Bash/Shell, Multi-stack  
 **Project Types**: CLI tool, Library/Package, Web App, API, Script Collection, Config/Dotfiles  
 **Author**: valorisa  
@@ -78,140 +78,189 @@ fichier.
 
 ## 📦 Fichiers à Générer (Ordre de livraison, toujours 15+)
 
-### 1. README.md (Bilingue EN/FR avec Style Vibrant)
+### 1. README.md (Version Anglaise Uniquement)
 
 **Section "About" (GitHub Sidebar)** :
 - **Description** : [Texte < 350 caractères, impactant en EN]
 - **Website URL** : [URL ou `https://github.com/[user]/[repo]#readme`]
 - **Topics** : [20 topics/tags pertinents, séparés par virgules]
 
-**Structure du README** :
+**Structure du README.md (ENGLISH ONLY)** :
 
 ```markdown
-🚀 [NOM DU PROJET]
+🚀 [PROJECT NAME]
 
-[Tagline percutante en EN]
-[Tagline en FR]
+[Powerful tagline in English]
 
 Quick Start • Documentation • Examples • Contributing • License
 
 ---
 
-## 🌟 Overview / Vue d'ensemble
+## 🌟 Overview
 
-### English
-[3-4 paragraphes : problème résolu, solution, bénéfices clés, public cible]
-
-### Français
-[Même contenu en FR — traduction fidèle, ton pédagogique]
+[3-4 paragraphs: problem solved, solution, key benefits, target audience]
 
 ---
 
-## ✨ Features / Fonctionnalités
+## ✨ Features
 
-### English
-- 🎯 **[Feature 1]** : [Description + exemple concret d'usage]
-- ⚡ **[Feature 2]** : [Description + exemple concret d'usage]
-[5 features minimum]
-
-### Français
-[Même liste traduite]
+- 🎯 **[Feature 1]**: [Description with concrete usage example]
+- ⚡ **[Feature 2]**: [Description with concrete usage example]
+[Minimum 5 features]
 
 ---
 
-## 🚀 Quick Start / Démarrage Rapide
+## 🚀 Quick Start
 
-### English
-#### Prerequisites
-[Liste RÉELLE avec numéros de version minimaux selon la stack détectée]
+### Prerequisites
+[REAL list with minimum version numbers based on detected stack]
 
-#### Installation
-[Commandes RÉELLES selon la stack — pas de placeholders]
+### Installation
+[REAL commands based on stack — no placeholders]
 
 > [!TIP]
-> **Pro tip**: [Conseil expert spécifique à la stack]
-
-### Français
-[Même contenu en FR]
+> **Pro tip**: [Expert advice specific to the stack]
 
 ---
 
-## 📖 Documentation / Documentation Complète
+## 📖 Documentation
 
-### English
-[Architecture overview + diagramme Mermaid RÉEL représentant ce projet]
+[Architecture overview + REAL Mermaid diagram representing this project]
 
-[Configuration guide avec toutes les options documentées]
-[Troubleshooting : 3-5 erreurs fréquentes réelles avec solutions]
-
-### Français
-[Même documentation complète en FR]
+[Configuration guide with all options documented]
+[Troubleshooting: 3-5 common real errors with solutions]
 
 ---
 
-## 🛠️ Development / Développement Local
-## 🧪 Testing / Tests
-## 🚢 Deployment / Déploiement
-## 🤝 Contributing / Contribution
-## 📝 Changelog / Journal des Modifications
-## 🛡️ Security / Sécurité
-## 📄 License / Licence
-## 👥 Team / Équipe
-## ❓ FAQ / Questions Fréquentes
+## 🛠️ Development
+## 🧪 Testing
+## 🚢 Deployment
+## 🤝 Contributing
+## 📝 Changelog
+## 🛡️ Security
+## 📄 License
+## 👥 Team
+## ❓ FAQ
 
-[Toutes sections bilingues EN/FR]
+[All sections in English]
 ```
 
-### 2. CONTRIBUTING.md
+### 2. README_FR.md (Version Française Complète)
+
+**IMPORTANT**: Fichier SÉPARÉ avec traduction complète du README.md
+
+**Structure identique au README.md, mais entièrement en français** :
+
+```markdown
+🚀 [NOM DU PROJET]
+
+[Tagline percutante en français]
+
+Démarrage Rapide • Documentation • Exemples • Contribution • Licence
+
+---
+
+## 🌟 Vue d'ensemble
+
+[3-4 paragraphes : problème résolu, solution, bénéfices clés, public cible]
+
+---
+
+## ✨ Fonctionnalités
+
+- 🎯 **[Fonctionnalité 1]** : [Description avec exemple concret d'usage]
+- ⚡ **[Fonctionnalité 2]** : [Description avec exemple concret d'usage]
+[Minimum 5 fonctionnalités]
+
+---
+
+## 🚀 Démarrage Rapide
+
+### Prérequis
+[Liste RÉELLE avec numéros de version minimaux selon la stack détectée]
+
+### Installation
+[Commandes RÉELLES selon la stack — pas de placeholders]
+
+> [!CONSEIL]
+> **Astuce pro** : [Conseil expert spécifique à la stack]
+
+---
+
+## 📖 Documentation
+
+[Vue d'ensemble de l'architecture + diagramme Mermaid RÉEL]
+
+[Guide de configuration avec toutes les options documentées]
+[Dépannage : 3-5 erreurs fréquentes réelles avec solutions]
+
+---
+
+## 🛠️ Développement Local
+## 🧪 Tests
+## 🚢 Déploiement
+## 🤝 Contribution
+## 📝 Journal des Modifications
+## 🛡️ Sécurité
+## 📄 Licence
+## 👥 Équipe
+## ❓ Questions Fréquentes
+
+[Toutes les sections en français]
+```
+
+**Note importante** : Les deux fichiers doivent avoir un contenu ÉQUIVALENT mais dans leur langue respective. Pas de mélange des langues dans un même fichier.
+
+### 3. CONTRIBUTING.md
 [Guide exhaustif : setup dev, coding standards de la stack détectée,
 Conventional Commits, PR process, review process, Code of Conduct reference]
 
-### 3. CODE_OF_CONDUCT.md
+### 4. CODE_OF_CONDUCT.md
 [Contributor Covenant v2.1 complet]
 
-### 4. LICENSE
+### 5. LICENSE
 [MIT par défaut pour side projects perso, sauf indication contraire]
 
-### 5. SECURITY.md
+### 6. SECURITY.md
 [Supported versions, reporting process, disclosure policy]
 
-### 6. CHANGELOG.md
+### 7. CHANGELOG.md
 [Format Keep a Changelog + Semantic Versioning — entrée v0.1.0 initiale]
 
-### 7. .gitignore
+### 8. .gitignore
 [Contenu RÉEL et exhaustif selon la stack détectée — pas un template générique]
 
-### 8. .github/PULL_REQUEST_TEMPLATE.md
+### 9. .github/PULL_REQUEST_TEMPLATE.md
 [Template standard]
 
-### 9. .github/ISSUE_TEMPLATE/bug_report.md
+### 10. .github/ISSUE_TEMPLATE/bug_report.md
 [Champ "Environment" pré-rempli avec les éléments pertinents de la stack]
 
-### 10. .github/ISSUE_TEMPLATE/feature_request.md
+### 11. .github/ISSUE_TEMPLATE/feature_request.md
 [Template standard]
 
-### 11. .github/workflows/ci.yml
+### 12. .github/workflows/ci.yml
 [Contenu RÉEL selon la stack — actions réelles par stack]
 
-### 12. .github/workflows/release.yml
+### 13. .github/workflows/release.yml
 [Workflow release adapté à la stack]
 
-### 13. .github/dependabot.yml
+### 14. .github/dependabot.yml
 [`package-ecosystem` réel selon la stack détectée]
 
-### 14. docs/architecture.md
+### 15. docs/architecture.md
 [Documentation d'architecture RÉELLE avec diagramme Mermaid]
 
-### 15. docs/api.md
+### 16. docs/api.md
 [Documentation réelle des interfaces OU docs/usage.md avec exemples]
 
-### 16. .editorconfig
+### 17. .editorconfig
 [Standard — inchangé]
 
-### 17. Makefile OU fichier de scripts adapté à la stack
+### 18. Makefile OU fichier de scripts adapté à la stack
 [Fichier adapté au type de projet avec commandes réelles]
 
-### 18. docker-compose.yml OU fichier pertinent au type
+### 19. docker-compose.yml OU fichier pertinent au type
 [Générer UNIQUEMENT si web app/API, sinon remplacer par fichier pertinent]
 
 # Instructions de Génération
@@ -221,7 +270,7 @@ Conventional Commits, PR process, review process, Code of Conduct reference]
 3. **Génère TOUT en une seule réponse** : Aucun aller-retour
 4. **Structure claire** : Chaque fichier dans son bloc de code
 5. **Contenu verbeux** : README > 2000 mots, documentation exhaustive
-6. **Bilingue EN/FR** : Toutes les sections README bilingues
+6. **Documentation bilingue** : README.md (anglais) + README_FR.md (français) séparés
 7. **Style vibrant** : Bannières colorées, badges stack-specific, emojis
 8. **Conformité stricte** : Zéro violation markdownlint
 9. **Pédagogie** : Chaque concept expliqué, exemples concrets
@@ -238,12 +287,13 @@ Conventional Commits, PR process, review process, Code of Conduct reference]
 **README**
 - [ ] Tous les badges shields.io présents + badge(s) stack-specific
 - [ ] Section About complète (< 350 chars + URL + 20 topics)
-- [ ] Bilingue EN/FR complet, EN en premier
+- [ ] README.md en anglais uniquement
+- [ ] README_FR.md en français uniquement (traduction complète)
 - [ ] Diagramme Mermaid représente réellement CE projet
 - [ ] FAQ contient des questions réelles et probables
 
 **Structure**
-- [ ] 15+ fichiers générés
+- [ ] 16+ fichiers générés (incluant README.md + README_FR.md séparés)
 - [ ] Zéro violation markdownlint
 - [ ] Alertes GitHub utilisées (`> [!NOTE]`, `> [!WARNING]`, `> [!TIP]`)
 - [ ] Tout livré en une seule étape
@@ -270,10 +320,21 @@ Conventional Commits, PR process, review process, Code of Conduct reference]
 
 ---
 
-## What Changed from v1.0
+## Version History
 
-| Zone | Before | After |
-|------|--------|-------|
+### v2.1.0 (2026-05-29)
+
+**Breaking Change**: Bilingual documentation now uses separate files
+- README.md → English only
+- README_FR.md → French only (complete translation)
+- No more mixed EN/FR sections in single file
+
+### v2.0.0 (2026-05-29)
+
+Initial release with Phase 0 stack analysis
+
+| Zone | v1.0 | v2.0 |
+|------|------|------|
 | Stack Analysis | Mentioned, not tooled | Explicit stack → content matrix |
 | CI/CD | Placeholders `[Setup steps]` | Real actions per stack |
 | .gitignore | Generic template | Real content per stack |
@@ -283,6 +344,7 @@ Conventional Commits, PR process, review process, Code of Conduct reference]
 | Quality Checklist | Structural | Includes "zero unresolved placeholder" |
 | Author | `[Name]` | `valorisa` pre-filled |
 | Test Validation | Not tested | Validated with real Python CLI project |
+| Bilingual Docs | Mixed in one file | Separate README.md + README_FR.md (v2.1) |
 
 ---
 
