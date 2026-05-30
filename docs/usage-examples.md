@@ -30,7 +30,7 @@ Uses GitHub API v3, outputs JSON/CSV reports, includes pytest tests and pre-comm
 - **Files**: 24 generated
 - **Lines**: 3,530 total (185 CLI + 212 tests)
 - **Placeholders**: 0 verified
-- **Repository**: https://github.com/valorisa/github-repository-analyzer
+- **Repository**: [github-repository-analyzer](https://github.com/valorisa/github-repository-analyzer)
 
 ### Stack Detection (Phase 0 Silent Analysis)
 
